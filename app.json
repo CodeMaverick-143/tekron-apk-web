@@ -1,0 +1,82 @@
+{
+  "expo": {
+    "name": "Tekron",
+    "slug": "tekron",
+    "version": "1.1.8",
+    "orientation": "portrait",
+    "icon": "./assets/images/appIcon.png",
+    "scheme": "tekron",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.newtonschooloftechnology.tekron"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/images/appIcon.png"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "CAMERA",
+        "INTERNET",
+        "VIBRATE"
+      ],
+      "package": "com.newtonschooloftechnology.tekron"
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/appIcon.png",
+      "bundler": "metro",
+      "pwa": {
+        "enabled": true,
+        "offline": {
+          "enabled": true
+        }
+      }
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/appIcon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff",
+          "dark": {
+            "backgroundColor": "#000000"
+          }
+        }
+      ],
+      "expo-secure-store",
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow Tekron to access your photos.",
+          "savePhotosPermission": "Allow Tekron to save photos.",
+          "isAccessMediaLocationEnabled": true
+        }
+      ],
+      "expo-font"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "92a75240-89a1-405f-bf79-73c6ac1a44cb"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/92a75240-89a1-405f-bf79-73c6ac1a44cb"
+    }
+  }
+}
